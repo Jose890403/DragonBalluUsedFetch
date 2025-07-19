@@ -1,0 +1,100 @@
+body {
+    background: #434343;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e4e0e0;
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    }
+
+.tarjetaFinal{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+   
+
+}
+.tarjeta{
+   background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: visible;
+    width: 260px;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  
+}
+
+.tarjeta-header{
+    width: 100%;
+    border-radius: 10px;
+    background-image: url(https://web.dragonball-api.com/images-compress/89980.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    
+   
+}
+.tarjeta-body{
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-radius:0 0 16px 16px;
+    background: #211f1f; 
+    min-width: 230px;
+    color: white
+}
+.tarjeta-header img{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    transition: transform 0.6s ease-in-out;
+    object-fit: contain;
+    object-position: center center;
+    position: relative;
+    
+    
+}
+.tarjeta-header img:hover {
+   transform: scale(1.2);
+   cursor: pointer;
+   z-index: 2;
+}
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.ki, .raza, .descripcion {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100px;
+    gap: 2rem;
+    border: 1px, solid, white;
+}
